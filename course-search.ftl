@@ -40,7 +40,7 @@ http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
                 <#else>
                 <#-- EACH RESULT -->
                     {
-                    "title": "${s.result.title}",
+                    "title": "${s.result.metadata.courseTitle}",
                     "liveUrl": "${s.result.liveUrl}",
                     "award": "${s.result.metaData.courseAward}",
                     "department": "${s.result.metaData.courseDepartment}",
