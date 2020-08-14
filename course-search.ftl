@@ -49,8 +49,8 @@ http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
                     "typicalOffer": <#if s.result.metaData.courseTypicalOffer??>"${s.result.metaData.courseTypicalOffer}"<#else>"N/A"</#if>.
                     "yearOfEntry": "${s.result.metaData.courseYearOfEntry}",
                     "distanceLearning": "${s.result.metaData.courseDistanceLearning}",
-                    "summarySentence": "${s.result.metaData.c}",
-                    "associatedImage": "${s.result.metaData.I}"
+                    "summary": "${s.result.metaData.c}",
+                    "imageUrl": "${s.result.metaData.I}"
                     }<#if s.result.rank &lt; response.resultPacket.resultsSummary.currEnd>,</#if>
                 </#if>
             </@s.Results>
