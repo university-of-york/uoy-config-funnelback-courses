@@ -1,0 +1,149 @@
+openapi: 3.0.1
+info:
+  title: Funnelback Courses
+  description: 'This defines the University of York Course Search powered by funnelback. This is distinct from the Course API, which has a separate specification. If you are unable to make API calls from here, copy & paste the URL into a new browser tab.'
+  contact:
+    email: esg-teaching-and-learning@york.ac.uk
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 0.1.0
+externalDocs:
+  description: Learn more about funnelback search
+  url: https://docs.funnelback.com/
+servers:
+  - url: http://york.funnelback.co.uk/s/
+    description: Used for Live and Test collections
+tags:
+  - name: search
+    description: The search for courses
+paths:
+  /search.json:
+    get:
+      tags:
+        - search
+      summary: Search for a course
+      operationId: search
+      parameters:
+        - name: query
+          in: query
+          description: name of course to search for/query string
+          required: true
+          explode: true
+          schema:
+            type: string
+            example: History
+        - name: collection
+          in: query
+          description: Which funnelback collection to search. York-uni-web contains live courses.
+          required: true
+          schema:
+            type: string
+            example: york-uni-web
+            enum:
+              - york-uni-web
+        - name: profile
+          in: query
+          required: true
+          schema:
+            type: string
+            example: _default_preview
+        - name: smeta_contentType
+          in: query
+          description: What sort of data to request. Must be 'course'.
+          required: true
+          schema:
+            type: string
+            example: course
+      responses:
+        200:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Course'
+        400:
+          description: Invalid value
+          content: {}
+components:
+  schemas:
+    Metadata:
+      type: object
+      properties:
+        c:
+          type: string
+          example: Learn how studying the past can help us predict market futures
+        courseDepartment:
+          type: string
+          example: Department of Economics and Related Studies, Department of History
+        courseAward:
+          type: string
+          example: BA (Hons)
+        I:
+          type: string
+          example: https://www.york.ac.uk/media/study/courses/undergraduate/history/hero-history-economics-ba-1160.jpg
+          description: Image URL
+        courseUcasCode:
+          type: string
+          example: VL11
+        courseTitle:
+          type: string
+          example: History/Economics
+        courseLevel:
+          type: string
+          example: undergraduate
+          enum:
+            - undergraduate
+            - postgraduate
+        t:
+          type: string
+          example: History/Economics (BA) - Undergraduate, University of York
+        courseLength:
+          type: string
+          example: 3 years full-time
+        courseTypicalOffer:
+          type: string
+          example: AAA
+        courseYearOfEntry:
+          type: string
+          example: 2021/22
+        courseDistanceLearning:
+          type: string
+          example: No
+          enum:
+            - Yes
+            - No
+    Course:
+      required:
+        - title
+        - liveUrl
+      type: object
+      properties:
+        title:
+          type: string
+          example: History (BA) - Undergraduate
+        liveUrl:
+          type: string
+          example: https://www.york.ac.uk/study/undergraduate/courses/ba-history/
+        summary:
+          type: string
+          example: 'BA (Hons) History. Studying our past to reveal the future. Year of entry: 2021/22. ... Year 1. Your first year will introduce the study of History at a degree level. ... Histories and Contexts: choose two modules (20 credits each), typically from around eight'
+        metaData:
+          $ref: '#/components/schemas/Metadata'
+        clickTrackingUrl:
+          type: string
+          example: 'https://york.funnelback.co.uk/s/redirect?collection=york-uni-web&url=https%3A%2F%2Fwww.york.ac.uk%2Fstudy%2Fundergraduate%2Fcourses%2Fba-history%2F&index_url=https%3A%2F%2Fwww.york.ac.uk%2Fstudy%2Fundergraduate%2Fcourses%2Fba-history%2F&auth=gHDxBupY8bHZF0AcAHAnwA&profile=_default_preview&rank=1&query=history+contentType%3Acourse'
+        customData:
+          type: object
+          properties:
+            0:
+              type: string
+              example: History/Economics (BA)
+            1:
+              type: string
+              example: Undergraduate
+        documentVisibleToUser:
+          type: boolean
+          example: true
