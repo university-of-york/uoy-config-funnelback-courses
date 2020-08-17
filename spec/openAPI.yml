@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: Funnelback Courses
-  description: 'This defines the University of York Course Search powered by funnelback. This is distinct from the Course API, which has a separate specification. If you are unable to make API calls from here, copy & paste the URL into a new browser tab.'
+  description: 'This defines the University of York Course Search powered by Funnelback. This is distinct from the Courses API, which has a separate specification. If you are unable to make API calls from here, copy & paste the URL into a new browser tab.'
   contact:
     email: esg-teaching-and-learning@york.ac.uk
   license:
