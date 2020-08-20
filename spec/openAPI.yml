@@ -3,13 +3,13 @@ info:
   title: Funnelback Courses
   description: 'This defines the University of York Course Search powered by Funnelback. This is distinct from the Courses API, which has a separate specification. If you are unable to make API calls from here, copy & paste the URL into a new browser tab.'
   contact:
-    email: esg-teaching-and-learning@york.ac.uk
+    email: esg-teaching-and-learning-group@york.ac.uk
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 0.1.0
 externalDocs:
-  description: Learn more about funnelback search
+  description: Learn more about Funnelback search
   url: https://docs.funnelback.com/
 servers:
   - url: http://york.funnelback.co.uk/s/
@@ -35,7 +35,7 @@ paths:
             example: History
         - name: collection
           in: query
-          description: Which funnelback collection to search. York-uni-web contains live courses.
+          description: Which Funnelback collection to search. 'york-uni-web' contains live Yorkweb pages, including course pages.
           required: true
           schema:
             type: string
@@ -111,7 +111,6 @@ components:
         imageUrl:
           type: string
           example: https://www.york.ac.uk/media/study/courses/undergraduate/history/hero-history-economics-ba-1160.jpg
-          description: Image URL
         ucasCode:
           type: string
           example: VL11
