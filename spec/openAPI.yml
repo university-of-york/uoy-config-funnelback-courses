@@ -44,6 +44,7 @@ paths:
               - york-uni-web
         - name: profile
           in: query
+          description: The funnelback profile to use. _default is always present, _default_preview is used for previewing results
           required: true
           schema:
             type: string
