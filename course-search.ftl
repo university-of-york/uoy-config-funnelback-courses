@@ -6,8 +6,6 @@
 
 Outputs Funnelback response in JSON format, with callback if 'callback' parameter is included in query string
 
-Date: August 2020
-Author: Nicola Normandale (with thanks to Nick Pearson)
 
 See also:
 http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
