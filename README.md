@@ -8,7 +8,7 @@ Search templates are *.ftl files that determine the format of results from Funne
 
 ### Collection
 A Funnelback collection is a set of data that can be searched. It is possible for collections to contain other collections, 
-as the york-uni-web main York collection contains others.
+as the york-uni-campusmap collection contains others.
 
 The course collection is called *york-uni-courses*.
 
@@ -28,14 +28,18 @@ While logged in to the Funnelback admin console, find the *york-uni-courses* col
 From here you will see a list of configuration files for each profile. In order to publish a configuration file to Live, 
 it must first be pushed to 'Preview'.
 
-####To deploy a file:
-Click on the name of the file you want to deploy in the preview section. This takes you to a visual editor. You will need
-to copy the code from the matching file in Source Control to overwrite the file, and then click **Save**.
+#### To deploy a file:
+The simplest method of uploading/updating a file is to use the file picker at the bottom of the section. 
+There is also a drop-down menu that allows for the creation of new files that indicates the possible filenames that will be recognised by Funnelback.
+
+When uploading a new version of an existing file, the old one will be archived with a date-time stamp within Funnelback.
+This allows for a change to be quickly reverted by using the 'Restore' option on an archived version.
+
+Funnelback also provides a visual interface for viewing/editing existing files. 
+Click on the name of the file you want to edit in the preview section to open the editor. 
+You will need to copy the code from the matching file in Source Control to overwrite the file, and then click **Save**.
 
 Test that the file is working by running an example search, then when you are satisfied return to the config list and click **Publish** to publish that file to Live.
-
-If you are uploading a new file, use the file picker below the 'Preview' profile.
-
 ## OpenAPI Specification
 The OpenAPI specification can be viewed at https://university-of-york.github.io/uoy-config-funnelback-courses. It is served 
 here as a static site using a distribution of [Swagger-UI](https://github.com/swagger-api/swagger-ui/tree/master/dist).
