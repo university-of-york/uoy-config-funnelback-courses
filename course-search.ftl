@@ -13,9 +13,8 @@ http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
 -->
     <@fb.ViewModeBanner />
     <@fb.ErrorMessage />
-    <@s.InitialFormOnly>
-    </@s.InitialFormOnly>
     <@s.AfterSearchOnly>
+    <#-- ie. conditional display, content is evaluated only when there are results. -->
     <#-- CALLBACK -->
         <#if RequestParameters.callback?has_content>${RequestParameters.callback}(</#if>
     <#-- NO RESULTS -->
@@ -33,8 +32,6 @@ http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
             "results": [
             <@s.Results>
                 <#if s.result.class.simpleName == "TierBar">
-                    <#if s.result.matched == s.result.outOf>
-                    <#else></#if>
                 <#else>
                 <#-- EACH RESULT -->
                     {
