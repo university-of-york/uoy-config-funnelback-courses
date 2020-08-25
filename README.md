@@ -15,7 +15,7 @@ The course collection is called *york-uni-courses*.
 ### Development
 Useful resources:
 * [Funnelback Documentation](https://docs.funnelback.com/)
-* [OpenAPI Documentation](https://swagger.io/specification/)
+* [OpenAPI Documentation](https://swagger.io/docs/specification/)
 
 ### Testing
 The York-uni-courses collection has two profiles, for 'Live' and 'Preview'. The preview profile can be used for testing 
