@@ -58,7 +58,6 @@ It is downloaded in one repository however that breaks down into three parts. Th
         This is a dependency-free module that includes everything you need to serve Swagger UI in a server-side project, or a single-page application that can't resolve npm module dependencies. This resides in a folder called “dist”.
     3)  React Swagger UI:
         This is Swagger UI packaged as a React component for use in React applications.
-
 Current and further information on the Swagger UI and its branches can be found on the Swagger UI repo Readme.md.
 
 ### openAPI output
