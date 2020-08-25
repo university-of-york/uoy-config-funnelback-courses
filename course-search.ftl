@@ -32,7 +32,8 @@ http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
                 "yearOfEntry": "${s.result.metaData.courseYearOfEntry}",
                 "distanceLearning": "${s.result.metaData.courseDistanceLearning}",
                 "summary": "${s.result.metaData.c}",
-                "imageUrl": "${s.result.metaData.I}"
+                "imageUrl": "${s.result.metaData.I}",
+                "ucasCode": "${s.result.metaData.courseUcasCode}"
                 }<#if s.result.rank &lt; response.resultPacket.resultsSummary.currEnd>,</#if>
             </#if>
         </@s.Results>
