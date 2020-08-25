@@ -19,8 +19,7 @@ http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
         {
         "results": [
         <@s.Results>
-            <#if s.result.class.simpleName == "TierBar">
-            <#else>
+            <#if s.result.class.simpleName != "TierBar"><#-- TierBar is a sort of sub-heading, so we need to ignore any -->
             <#-- EACH RESULT -->
                 {
                 "title": "${s.result.metaData.courseTitle}",
