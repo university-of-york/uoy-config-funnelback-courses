@@ -1,6 +1,12 @@
 # UOY-CONFIG-FUNNELBACK-COURSES
 This repo contains configuration for the University of York's course search powered by [Funnelback](https://www.funnelback.com/). This configures a collection of course information within funnelback, which can be queried as an API returning JSON. This can be seen [here](https://york.funnelback.co.uk/s/search.json?collection=york-uni-courses&query=History&profile=_default_preview&form=course-search)
 
+
+## API Specification
+The [latest version of the API specification](https://university-of-york.github.io/uoy-config-funnelback-courses) is published and kept up-to-date automatically. 
+
+It is defined using the [OpenAPI specification](https://swagger.io/docs/specification/about/) and is served as a static site using a distribution of [Swagger-UI](https://github.com/swagger-api/swagger-ui/tree/master/dist).
+
 ## Funnelback
 
 ### Search Template
@@ -42,10 +48,6 @@ Click on the name of the file you want to edit in the preview section to open th
 You will need to copy the code from the matching file in Source Control to overwrite the file, and then click **Save**.
 
 Test that the file is working by running an example search, then when you are satisfied return to the config list and click **Publish** to publish that file to Live.
-## API Specification
-The [latest version of the API specification](https://university-of-york.github.io/uoy-config-funnelback-courses) is published and kept up-to-date automatically. 
-
-It is defined using the [OpenAPI specification](https://swagger.io/docs/specification/about/) and is served as a static site using a distribution of [Swagger-UI](https://github.com/swagger-api/swagger-ui/tree/master/dist).
 
 ## The Swagger UI
 
