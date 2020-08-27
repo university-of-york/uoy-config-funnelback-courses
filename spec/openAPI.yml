@@ -35,13 +35,13 @@ paths:
             example: History
         - name: collection
           in: query
-          description: Which Funnelback collection to search. 'york-uni-web' contains live Yorkweb pages, including course pages.
+          description: Which Funnelback collection to search. 'york-uni-courses' contains course results.
           required: true
           schema:
             type: string
-            example: york-uni-web
+            example: york-uni-courses
             enum:
-              - york-uni-web
+              - york-uni-courses
         - name: profile
           in: query
           description: The funnelback profile to use. _default is always present, _default_preview is used for previewing results
@@ -49,13 +49,13 @@ paths:
           schema:
             type: string
             example: _default_preview
-        - name: smeta_contentType
+        - name: form
           in: query
-          description: What sort of data to request. Must be 'course'.
+          description: This matches up to a template in the funnelback config, and defines the data format of results.
           required: true
           schema:
             type: string
-            example: course
+            example: course-search
       responses:
         200:
           description: successful operation
