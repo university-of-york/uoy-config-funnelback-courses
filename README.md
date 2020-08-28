@@ -1,6 +1,9 @@
 # UOY-CONFIG-FUNNELBACK-COURSES
 This repo contains configuration for the University of York's course search powered by [Funnelback](https://www.funnelback.com/). This configures a collection of course information within funnelback, which can be queried as an API returning JSON. This can be seen [here](https://york.funnelback.co.uk/s/search.json?collection=york-uni-courses&query=History&profile=_default_preview&form=course-search)
 
+Currently this defaults to bringing back 10 results. 
+* To retrieve 25 entries in the results array, add &num_ranks=25 to the URL. 
+* To retrieve from entry 11, add &start_rank=11  to the URL.
 
 ## API Specification
 The [latest version of the API specification](https://university-of-york.github.io/uoy-config-funnelback-courses) is published and kept up-to-date automatically. 
