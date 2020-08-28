@@ -22,6 +22,7 @@ http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
             <#if s.result.class.simpleName != "TierBar"><#-- TierBar is a sort of sub-heading, so we need to ignore any -->
             <#-- EACH RESULT -->
                 {
+                "rank": "${s.result.rank}",
                 "title": "${s.result.metaData.courseTitle}",
                 "liveUrl": "${s.result.liveUrl}",
                 "award": "${s.result.metaData.courseAward}",
@@ -33,7 +34,7 @@ http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
                 "distanceLearning": "${s.result.metaData.courseDistanceLearning}",
                 "summary": "${s.result.metaData.c}",
                 "imageUrl": "${s.result.metaData.I}",
-                "ucasCode": "${s.result.metaData.courseUcasCode}"
+                "ucasCode": <#if s.result.metaData.courseUcasCode??>"${s.result.metaData.courseUcasCode}"<#else>"N/A"</#if>
                 }<#if s.result.rank &lt; response.resultPacket.resultsSummary.currEnd>,</#if>
             </#if>
         </@s.Results>
