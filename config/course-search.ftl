@@ -28,7 +28,7 @@ http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
                 "department": "${s.result.metaData.courseDepartment}",
                 "level": "${s.result.metaData.courseLevel}",
                 "length": "${s.result.metaData.courseLength}",
-                "typicalOffer": <#if s.result.metaData.courseTypicalOffer??>"${s.result.metaData.courseTypicalOffer}"<#else>"N/A"</#if>.
+                "typicalOffer": <#if s.result.metaData.courseTypicalOffer??>"${s.result.metaData.courseTypicalOffer}"<#else>"N/A"</#if>,
                 "yearOfEntry": "${s.result.metaData.courseYearOfEntry}",
                 "distanceLearning": "${s.result.metaData.courseDistanceLearning}",
                 "summary": "${s.result.metaData.c}",
