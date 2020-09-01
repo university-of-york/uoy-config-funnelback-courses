@@ -1,5 +1,5 @@
 # UOY-CONFIG-FUNNELBACK-COURSES
-This repo contains configuration for the University of York's course search powered by [Funnelback](https://www.funnelback.com/). This configures a collection of course information within funnelback, which can be queried as an API returning JSON. This can be seen [here](https://york.funnelback.co.uk/s/search.json?collection=york-uni-courses&query=History&profile=_default_preview&form=course-search)
+This repo contains configuration for the University of York's course search powered by [Funnelback](https://www.funnelback.com/). This configures a collection of course information within Funnelback, which can be queried as an API returning JSON. This can be seen [here](https://york.funnelback.co.uk/s/search.json?collection=york-uni-courses&query=History&profile=_default_preview&form=course-search)
 
 
 ## API Specification
