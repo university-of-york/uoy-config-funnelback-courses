@@ -2,14 +2,6 @@
 <#import "/web/templates/modernui/funnelback_classic.ftl" as s/>
 <#import "/web/templates/modernui/funnelback.ftl" as fb/>
 <#compress>
-<#-- course-search.ftl
-
-Outputs Funnelback response in JSON format, with callback if 'callback' parameter is included in query string
-
-See also:
-http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
-
--->
     <@fb.ViewModeBanner />
     <@fb.ErrorMessage />
     <@s.AfterSearchOnly>
@@ -30,10 +22,10 @@ http://docs.funnelback.com/ui_modern_form_content_type_collection_cfg.html
                 "length": "${s.result.metaData.courseLength?json_string}",
                 "typicalOffer": <#if s.result.metaData.courseTypicalOffer??>"${s.result.metaData.courseTypicalOffer?json_string}"<#else>"N/A"</#if>,
                 "yearOfEntry": "${s.result.metaData.courseYearOfEntry?json_string}",
-                "distanceLearning": "${s.result.metaData.courseDistanceLearning?json_string}",
+                "distanceLearning": <#if s.result.metaData.courseDistanceLearning??>"${s.result.metaData.courseDistanceLearning?json_string}"<#else>null</#if>,
                 "summary": "${s.result.metaData.c?json_string}",
                 "imageUrl": "${s.result.metaData.I?json_string}",
-                "ucasCode": "${s.result.metaData.courseUcasCode?json_string}"
+                "ucasCode": <#if s.result.metaData.courseUcasCode??>"${s.result.metaData.courseUcasCode?json_string}"<#else>null</#if>
                 }<#if s.result.rank &lt; response.resultPacket.resultsSummary.currEnd>,</#if>
             </#if>
         </@s.Results>

@@ -1,7 +1,6 @@
 <#ftl encoding="utf-8" />
 <#import "/web/templates/modernui/funnelback_classic.ftl" as s/>
 <#import "/web/templates/modernui/funnelback.ftl" as fb/>
-<#import "/conf/york-uni-web/workflow/additional_macros.ftl" as am/>
 <#import "/conf/york-uni-web/_default_preview/result.ftl" as Result/>
 <#escape x as x?html>
 <#--
