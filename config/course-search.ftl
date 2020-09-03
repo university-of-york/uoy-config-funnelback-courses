@@ -26,6 +26,7 @@
                 "summary": "${s.result.metaData.c?json_string}",
                 "imageUrl": "${s.result.metaData.I?json_string}",
                 "ucasCode": <#if s.result.metaData.courseUcasCode??>"${s.result.metaData.courseUcasCode?json_string}"<#else>null</#if>
+
                 }<#if s.result.rank &lt; response.resultPacket.resultsSummary.currEnd>,</#if>
             </#if>
         </@s.Results>
