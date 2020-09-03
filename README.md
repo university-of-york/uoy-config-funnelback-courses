@@ -4,6 +4,10 @@ This repo contains configuration for the University of York's Course Search powe
 This configures a collection of course information within Funnelback, which can be queried as an API returning JSON. 
 This can be seen [here](https://york.funnelback.co.uk/s/search.json?collection=york-uni-courses&query=History&profile=_default_preview&form=course-search)
 
+Currently this defaults to bringing back 10 results. 
+* To retrieve 25 entries in the results array, add &num_ranks=25 to the URL. 
+* To retrieve from entry 11, add &start_rank=11  to the URL.
+
 ## API Specification
 The [latest version of the API specification](https://university-of-york.github.io/uoy-config-funnelback-courses) is published and kept up-to-date automatically. 
 
@@ -19,6 +23,16 @@ The course collection is called `york-uni-courses`.
 
 ### Search Templates
 Search templates are `*.ftl` files that determine the format of results from Funnelback.
+
+The __course-search template__ outputs just the course fields the Courses API requires as a Funnelback response in JSON format, 
+with callback if 'callback' parameter is included in query string. 
+
+In the version of Funnelback currently in use (15.10), it requires the following line in the collections.cfg file so it 
+will return the results with a content type of application/json:
+
+    ui.modern.form.course-search.content_type=application/json
+
+See [UI Modern Form Content Type (collection.cfg)](https://docs.funnelback.com/15.10/more/extra/ui_modern_form_content_type_collection_cfg.html)
 
 ## Development
 Useful resources:
