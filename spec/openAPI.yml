@@ -12,7 +12,7 @@ externalDocs:
   description: Learn more about Funnelback search
   url: https://docs.funnelback.com/
 servers:
-  - url: http://york.funnelback.co.uk/
+  - url: https://york.funnelback.co.uk/
     description: Used for Live and Test collections
 tags:
   - name: search
