@@ -1,7 +1,7 @@
 # Funnelback Courses API
 
 This repo contains configuration for the University of York's Course Search powered by [Funnelback](https://www.funnelback.com/). 
-This configures a collection of course information within Funnelback, which can be queried as an API returning JSON. 
+This configures a collection of course information within Funnelback, which can be queried as an API returning JSON.
 
 ## Related Repos
 
@@ -12,17 +12,17 @@ This configures a collection of course information within Funnelback, which can 
 
 The Funnelback Courses API is available at [https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&query=History](https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&query=History) (update the `query` parameter with your search term).
 
-Currently this defaults to bringing back 10 results. 
-* To retrieve 25 entries in the results array, add &num_ranks=25 to the URL. 
-* To retrieve from entry 11, add &start_rank=11  to the URL.
+Currently this defaults to bringing back 10 results.
+* To retrieve 25 entries in the results array, add `&num_ranks=25` to the URL.
+* To retrieve from entry 11, add `&start_rank=11` to the URL.
 
 The [latest version of the API specification](https://university-of-york.github.io/uoy-config-funnelback-courses) is published and kept up-to-date automatically. It is defined using the [OpenAPI specification](https://swagger.io/docs/specification/about/) and is served as a static site using a distribution of [Swagger-UI](https://github.com/swagger-api/swagger-ui/tree/master/dist).
 
 ## Funnelback
 
 ### Collections
-A Funnelback collection is a set of data that can be searched. It is possible for collections to contain other collections, 
-as the `york-uni-campusmap` collection contains others.
+
+A Funnelback collection is a set of data that can be searched. It is possible for collections to contain other collections, as the `york-uni-campusmap` collection contains others.
 
 The course collection is called `york-uni-courses`.
 
