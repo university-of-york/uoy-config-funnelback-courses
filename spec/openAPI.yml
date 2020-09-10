@@ -27,7 +27,7 @@ paths:
       parameters:
         - name: query
           in: query
-          description: name of course to search for/query string
+          description: The name of course to search for/query string.
           required: true
           explode: true
           schema:
@@ -35,7 +35,7 @@ paths:
             example: History
         - name: collection
           in: query
-          description: Which Funnelback collection to search. 'york-uni-courses' contains course results.
+          description: Which Funnelback collection to search. `york-uni-courses` contains course results.
           required: true
           schema:
             type: string
@@ -44,18 +44,34 @@ paths:
               - york-uni-courses
         - name: profile
           in: query
-          description: The funnelback profile to use. _default is always present, _default_preview is used for previewing results
+          description: The Funnelback profile to use. `_default` is always present, `_default_preview` is used for previewing results.
           required: true
           schema:
             type: string
             example: _default_preview
         - name: form
           in: query
-          description: This matches up to a template in the funnelback config, and defines the data format of results.
+          description: This matches up to a template in the Funnelback config, and defines the data format of results.
           required: true
           schema:
             type: string
             example: course-search
+        - name: num_ranks
+          in: query
+          description: The number of results in the dataset to return from the search. The next page of results can be retrieved by using the `start_rank` parameter.
+          required: false
+          schema:
+            type: integer
+            example: 25
+            default: 10
+        - name: start_rank
+          in: query
+          description: "The position in the dataset to return results from. Used in combination with `num_ranks` to paginate a dataset. Note: possible values start from 1."
+          required: false
+          schema:
+            type: integer
+            example: 11
+            default: 1
       responses:
         200:
           description: successful operation
