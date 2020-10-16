@@ -14,12 +14,13 @@
             <#if s.result.class.simpleName != "TierBar"><#-- TierBar is a sort of sub-heading, so we need to ignore any -->
             <#-- EACH RESULT -->
                 {
-                "title": <#if s.result.metaData.courseTitle??>
-                "${s.result.metaData.courseTitle?json_string}"
-            <#elseif s.result.metaData.t?json_string??>
-                "${s.result.metaData.t?json_string}"
-            <#else>null</#if>,
-                "liveUrl": <#if s.result.liveUrl??>"${s.result.liveUrl?json_string}"<#else>null</#if>,
+                "title":
+                <#if s.result.metaData.courseTitle??>
+                    "${s.result.metaData.courseTitle?json_string}"
+                <#elseif s.result.metaData.t?json_string??>
+                    "${s.result.metaData.t?json_string}"
+                <#else>null</#if>,
+               "liveUrl": <#if s.result.liveUrl??>"${s.result.liveUrl?json_string}"<#else>null</#if>,
                 "award": <#if s.result.metaData.courseAward??>"${s.result.metaData.courseAward?json_string}"<#else>null</#if>,
                 "department": <#if s.result.metaData.courseDepartment??>"${s.result.metaData.courseDepartment?json_string}"<#else>null</#if>,
                 "level": <#if s.result.metaData.courseLevel??>"${s.result.metaData.courseLevel?json_string}"<#else>null</#if>,
