@@ -56,6 +56,15 @@ paths:
           schema:
             type: string
             example: course-search
+        - name: smeta_contentType
+          in: query
+          description: This tells Funnelback to only return results that are defined as courses in the meta data.
+          required: true
+          schema:
+            type: string
+            example: course
+            enum:
+              - course
         - name: num_ranks
           in: query
           description: The number of results in the dataset to return from the search. The next page of results can be retrieved by using the `start_rank` parameter.

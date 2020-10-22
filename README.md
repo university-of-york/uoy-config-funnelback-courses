@@ -10,7 +10,7 @@ This configures a collection of course information within Funnelback, which can 
 
 ## Comsuming the API
 
-The Funnelback Courses API is available at [https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&query=History](https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&query=History) (update the `query` parameter with your search term).
+The Funnelback Courses API is available at [https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&smeta_contentType=course&query=History](https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&smeta_contentType=course&query=History) (update the `query` parameter with your search term).
 
 Currently this defaults to bringing back 10 results.
 * To retrieve 25 entries in the results array, add `&num_ranks=25` to the URL.
