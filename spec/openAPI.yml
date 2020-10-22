@@ -78,14 +78,22 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Course'
+                $ref: '#/components/schemas/Results'
         400:
           description: Invalid value
           content: {}
 components:
   schemas:
+    Results:
+      type: object
+      properties:
+        numberOfMatches:
+          type: integer
+        courses:
+          type: array
+          items:
+            $ref: '#/components/schemas/Course'
+
     Course:
       type: object
       properties:
