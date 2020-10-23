@@ -8,7 +8,7 @@ This configures a collection of course information within Funnelback, which can 
 - [Course Search](https://github.com/university-of-york/uoy-app-course-search) - the user-facing Course Search application on the University of York website.
 - [Courses API](https://github.com/university-of-york/uoy-api-courses) - the API that provides Course Search functionality and in turn calls the Funnelback Courses API.
 
-## Comsuming the API
+## Consuming the API
 
 The Funnelback Courses API is available at [https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&smeta_contentType=course&query=History](https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&smeta_contentType=course&query=History) (update the `query` parameter with your search term).
 
