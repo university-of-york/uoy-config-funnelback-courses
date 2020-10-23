@@ -135,6 +135,7 @@ components:
           example: 3 years full-time
         typicalOffer:
           type: string
+          nullable: true
           example: AAA
         yearOfEntry:
           type: string
