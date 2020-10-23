@@ -19,7 +19,7 @@
                 "title":
                 <#if s.result.metaData.courseTitle??>
                     "${s.result.metaData.courseTitle?json_string}"
-                <#elseif s.result.metaData.t?json_string??>
+                <#elseif s.result.metaData.t??>
                     "${s.result.metaData.t?json_string}"
                 <#else>null</#if>,
                 "liveUrl": <#if s.result.liveUrl??>"${s.result.liveUrl?json_string}"<#else>null</#if>,
