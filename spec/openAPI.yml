@@ -56,6 +56,15 @@ paths:
           schema:
             type: string
             example: course-search
+        - name: smeta_contentType
+          in: query
+          description: This tells Funnelback to only return results that are defined as courses in the meta data.
+          required: true
+          schema:
+            type: string
+            example: course
+            enum:
+              - course
         - name: num_ranks
           in: query
           description: The number of results in the dataset to return from the search. The next page of results can be retrieved by using the `start_rank` parameter.
@@ -78,14 +87,22 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Course'
+                $ref: '#/components/schemas/Results'
         400:
           description: Invalid value
           content: {}
 components:
   schemas:
+    Results:
+      type: object
+      properties:
+        numberOfMatches:
+          type: integer
+        courses:
+          type: array
+          items:
+            $ref: '#/components/schemas/Course'
+
     Course:
       type: object
       properties:
@@ -118,6 +135,7 @@ components:
           example: 3 years full-time
         typicalOffer:
           type: string
+          nullable: true
           example: AAA
         yearOfEntry:
           type: string

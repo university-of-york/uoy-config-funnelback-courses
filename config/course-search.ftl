@@ -19,7 +19,7 @@
                 "title":
                 <#if s.result.metaData.courseTitle??>
                     "${s.result.metaData.courseTitle?json_string}"
-                <#elseif s.result.metaData.t?json_string??>
+                <#elseif s.result.metaData.t??>
                     "${s.result.metaData.t?json_string}"
                 <#else>null</#if>,
                 "liveUrl": <#if s.result.liveUrl??>"${s.result.liveUrl?json_string}"<#else>null</#if>,
@@ -27,7 +27,7 @@
                 "department": <#if s.result.metaData.courseDepartment??>"${s.result.metaData.courseDepartment?json_string}"<#else>null</#if>,
                 "level": <#if s.result.metaData.courseLevel??>"${s.result.metaData.courseLevel?json_string}"<#else>null</#if>,
                 "length": <#if s.result.metaData.courseLength??>"${s.result.metaData.courseLength?json_string}"<#else>null</#if>,
-                "typicalOffer": <#if s.result.metaData.courseTypicalOffer??>"${s.result.metaData.courseTypicalOffer?json_string}"<#else>"N/A"</#if>,
+                "typicalOffer": <#if s.result.metaData.courseTypicalOffer??>"${s.result.metaData.courseTypicalOffer?json_string}"<#else>null</#if>,
                 "yearOfEntry": <#if s.result.metaData.courseYearOfEntry??>"${s.result.metaData.courseYearOfEntry?json_string}"<#else>null</#if>,
                 "distanceLearning": <#if s.result.metaData.courseDistanceLearning??>"${s.result.metaData.courseDistanceLearning?json_string}"<#else>null</#if>,
                 "summary":<#if s.result.metaData.c??>"${s.result.metaData.c?json_string}"<#else>null</#if>,
