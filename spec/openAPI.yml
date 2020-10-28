@@ -98,7 +98,7 @@ components:
       properties:
         numberOfMatches:
           type: integer
-        courses:
+        results:
           type: array
           items:
             $ref: '#/components/schemas/Course'
