@@ -9,7 +9,7 @@
     <#-- CALLBACK -->
         <#if RequestParameters.callback?has_content>${RequestParameters.callback}(</#if>
         {
-        "numberOfMatches": "${response.resultPacket.resultsSummary.fullyMatching?json_string}",
+        "numberOfMatches": ${response.resultPacket.resultsSummary.fullyMatching},
         "results":
         [
         <@s.Results>
