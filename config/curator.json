@@ -390,7 +390,7 @@
   } ]
 }, {
   "created" : "2020-11-16T15:30:20.950336Z",
-  "lastModified" : "2020-11-16T15:58:52.414935Z",
+  "lastModified" : "2020-11-17T11:04:28.8511Z",
   "id" : "8375dc64-6b13-4055-888d-0e417f6d0729",
   "name" : "Theoretical Physics search",
   "label" : "DEFAULT",
@@ -401,7 +401,7 @@
       "type" : "Or",
       "triggers" : [ {
         "type" : "AllQueryWords",
-        "triggerWords" : [ "theoretical" ]
+        "triggerWords" : [ "theoretical physics" ]
       } ]
     } ]
   },
