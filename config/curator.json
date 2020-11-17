@@ -1,8 +1,8 @@
 [ {
-  "created" : "2020-10-20T14:15:42.842+01:00",
-  "lastModified" : "2020-10-20T14:59:49.099+01:00",
-  "id" : "016dc3bb-fe20-434e-bc59-23ac6a279881",
-  "name" : "Computer Science",
+  "created" : "2020-11-16T14:32:15.116712Z",
+  "lastModified" : "2020-11-16T14:32:15.117377Z",
+  "id" : "0866a803-c3b6-4404-bf8a-00cd427582bf",
+  "name" : "Biology search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -10,25 +10,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Computer Science",
-        "ignoreCase" : true
-      }, {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Computing",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "Biology" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-beng-computer-science/", "https://www.york.ac.uk/study/undergraduate/courses/beng-bsc-computer-science-industry/", "https://www.york.ac.uk/study/undergraduate/courses/meng-computer-science/", "https://www.cs.york.ac.uk/undergraduate/ug-courses/meng-cs-industry/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-biology/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:01:59.371+01:00",
-  "lastModified" : "2020-10-20T15:01:59.371+01:00",
-  "id" : "cb05fa30-5f7d-4112-8aae-3800ac3e471b",
-  "name" : "Archaeology",
+  "created" : "2020-11-16T14:34:13.21147Z",
+  "lastModified" : "2020-11-16T14:34:13.22213Z",
+  "id" : "f88b3be3-4aad-442d-86b7-65d68a6407c2",
+  "name" : "Biomedical search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -36,21 +31,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Archaeology",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "biomedical" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-archaeology/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-archaeology/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-biomedical-sciences/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:03:56.957+01:00",
-  "lastModified" : "2020-10-20T15:03:56.957+01:00",
-  "id" : "87c7ee1e-a041-4b33-9016-b18b3ae57d5e",
-  "name" : "Biology",
+  "created" : "2020-11-16T14:35:53.354487Z",
+  "lastModified" : "2020-11-16T14:35:53.362262Z",
+  "id" : "de3a3924-1144-4957-880d-6273eee0754b",
+  "name" : "Chemistry search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -58,21 +52,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Biology",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "chemistry" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-biology/", "https://www.york.ac.uk/study/undergraduate/courses/mbiol-biology/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-chemistry/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:04:51.107+01:00",
-  "lastModified" : "2020-10-20T15:04:51.107+01:00",
-  "id" : "76f70659-7c4f-4174-9eac-b1e485aea2e0",
-  "name" : "Biochemistry",
+  "created" : "2020-11-16T14:37:27.065386Z",
+  "lastModified" : "2020-11-16T14:41:30.594749Z",
+  "id" : "bfc00ccc-b45c-4707-b7da-99f3f21642e6",
+  "name" : "Computer Engineering search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -80,21 +73,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Biochemistry",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "computer", "engineering" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-biochemistry/", "https://www.york.ac.uk/study/undergraduate/courses/mbiochem-biochemistry/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/beng-electronic-computer-engineering/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:07:04.368+01:00",
-  "lastModified" : "2020-10-20T15:07:04.368+01:00",
-  "id" : "af16a0c6-b424-4426-a88a-642718cc4225",
-  "name" : "Chemistry",
+  "created" : "2020-11-16T14:43:02.799627Z",
+  "lastModified" : "2020-11-16T14:43:02.804604Z",
+  "id" : "938087aa-497c-499e-be23-6012ea0c4838",
+  "name" : "Criminology search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -102,31 +94,8 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Chemistry",
-        "ignoreCase" : true
-      } ]
-    } ]
-  },
-  "actions" : [ {
-    "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-chemistry/", "https://www.york.ac.uk/study/undergraduate/courses/mchem-chemistry-industry/", "https://www.york.ac.uk/study/undergraduate/courses/mchem-chemistry-year-abroad/" ]
-  } ]
-}, {
-  "created" : "2020-10-20T15:08:51.434+01:00",
-  "lastModified" : "2020-10-20T15:08:51.434+01:00",
-  "id" : "9a98473b-5df9-48a2-8822-180129b9aa52",
-  "name" : "Criminology",
-  "label" : "DEFAULT",
-  "enabled" : true,
-  "trigger" : {
-    "type" : "And",
-    "triggers" : [ {
-      "type" : "Or",
-      "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Criminology",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "criminology" ]
       } ]
     } ]
   },
@@ -135,10 +104,10 @@
     "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-criminology/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:09:31.458+01:00",
-  "lastModified" : "2020-10-20T15:09:31.458+01:00",
-  "id" : "93d48e5a-bcc0-4ee1-a2b1-39a856eb00b1",
-  "name" : "Education",
+  "created" : "2020-11-16T14:44:55.965117Z",
+  "lastModified" : "2020-11-16T14:44:55.970121Z",
+  "id" : "8b020886-9303-40fa-948f-e835b0bfa90f",
+  "name" : "Economics search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -146,31 +115,8 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Education",
-        "ignoreCase" : true
-      } ]
-    } ]
-  },
-  "actions" : [ {
-    "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-education/" ]
-  } ]
-}, {
-  "created" : "2020-10-20T15:10:27.957+01:00",
-  "lastModified" : "2020-10-20T15:10:27.957+01:00",
-  "id" : "930ef1e2-5b2a-443b-8d5b-20cd1b69e281",
-  "name" : "Economics",
-  "label" : "DEFAULT",
-  "enabled" : true,
-  "trigger" : {
-    "type" : "And",
-    "triggers" : [ {
-      "type" : "Or",
-      "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Economics",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "economics" ]
       } ]
     } ]
   },
@@ -179,10 +125,10 @@
     "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-bsc-economics/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:11:46.921+01:00",
-  "lastModified" : "2020-10-20T15:11:46.921+01:00",
-  "id" : "8e161186-50e3-48e5-af93-d61374945afe",
-  "name" : "Electronic Engineering",
+  "created" : "2020-11-16T14:46:19.317905Z",
+  "lastModified" : "2020-11-16T14:46:19.322885Z",
+  "id" : "68ab7e84-b868-4f65-975a-80f120a061c3",
+  "name" : "Education search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -190,21 +136,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Electronic Engineering",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "education" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/beng-electronic-engineering/", "https://www.york.ac.uk/study/undergraduate/courses/beng-electronic-engineering-industry/", "https://www.york.ac.uk/study/undergraduate/courses/meng-electronic-engineering/", "https://www.york.ac.uk/study/undergraduate/courses/meng-electronic-engineering-industry/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-education/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:13:02.53+01:00",
-  "lastModified" : "2020-10-20T15:13:02.53+01:00",
-  "id" : "4a4fd29c-16a4-4656-821b-e9f09a7211bd",
-  "name" : "English",
+  "created" : "2020-11-16T14:48:01.156336Z",
+  "lastModified" : "2020-11-16T14:48:01.160893Z",
+  "id" : "5a044eb0-1230-48ff-bbca-8a2473b9c774",
+  "name" : "English search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -212,21 +157,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "English",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "english" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "http://www.york.ac.uk/study/undergraduate/courses/ba-english" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-english/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:14:50.577+01:00",
-  "lastModified" : "2020-10-20T15:14:50.577+01:00",
-  "id" : "452c078a-c657-4951-9ee1-cdf979afd73e",
-  "name" : "History",
+  "created" : "2020-11-16T14:52:41.136611Z",
+  "lastModified" : "2020-11-16T14:52:41.14128Z",
+  "id" : "ba9d3dfc-9443-490f-bbf2-e8bc37960660",
+  "name" : "History search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -234,9 +178,8 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "History",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "history" ]
       } ]
     } ]
   },
@@ -245,10 +188,10 @@
     "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-history/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:15:55.564+01:00",
-  "lastModified" : "2020-10-20T15:15:55.564+01:00",
-  "id" : "d22eedf2-f2f6-41e3-84a3-f4fe18f23368",
-  "name" : "History of Art",
+  "created" : "2020-11-16T14:55:08.23632Z",
+  "lastModified" : "2020-11-16T14:55:48.947273Z",
+  "id" : "18d9745c-6e08-4b32-bac0-8f1a64b2b1dd",
+  "name" : "History of Art search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -256,68 +199,23 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "History of Art",
-        "ignoreCase" : true
-      } ]
-    } ]
-  },
-  "actions" : [ {
-    "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-history-of-art/", "https://www.york.ac.uk/study/undergraduate/courses/ba-curating-art-history/", "https://www.york.ac.uk/study/undergraduate/courses/ba-history-of-art-abroad/", "https://www.york.ac.uk/study/undergraduate/courses/ba-curating-art-history-abroad/" ]
-  } ]
-}, {
-  "created" : "2020-10-20T15:17:52.753+01:00",
-  "lastModified" : "2020-10-20T15:17:52.753+01:00",
-  "id" : "756723c4-053b-46d1-9fc3-8823eb89ad88",
-  "name" : "Law",
-  "label" : "DEFAULT",
-  "enabled" : true,
-  "trigger" : {
-    "type" : "And",
-    "triggers" : [ {
-      "type" : "Or",
-      "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Law",
-        "ignoreCase" : true
-      } ]
-    } ]
-  },
-  "actions" : [ {
-    "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/llb-law/", "https://www.york.ac.uk/study/undergraduate/courses/llb-law-senior-status/", "https://www.york.ac.uk/study/undergraduate/courses/llb-law-criminology/" ]
-  } ]
-}, {
-  "created" : "2020-10-20T15:20:23.876+01:00",
-  "lastModified" : "2020-10-20T15:20:23.876+01:00",
-  "id" : "20fdd457-e0e1-40b6-91c8-57393e8df83b",
-  "name" : "Business & Management",
-  "label" : "DEFAULT",
-  "enabled" : true,
-  "trigger" : {
-    "type" : "And",
-    "triggers" : [ {
-      "type" : "Or",
-      "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Business and Management",
-        "ignoreCase" : true
-      }, {
         "type" : "AllQueryWords",
-        "triggerWords" : [ "business", "management" ]
+        "triggerWords" : [ "History", "of", "art" ]
       } ]
     } ]
   },
   "actions" : [ {
+    "type" : "RemoveUrls",
+    "urlsToRemove" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-history/" ]
+  }, {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-business-management/", "https://www.york.ac.uk/study/undergraduate/courses/ba-business-management-industry/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-business-management/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-business-management-industry/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-history-of-art/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:21:45.953+01:00",
-  "lastModified" : "2020-10-20T15:21:45.953+01:00",
-  "id" : "e75d5a94-885b-45f9-8068-3427c6a443b8",
-  "name" : "Mathematics",
+  "created" : "2020-11-16T14:57:57.493817Z",
+  "lastModified" : "2020-11-16T14:57:57.49917Z",
+  "id" : "6395b8fc-cf3b-4575-9ab1-f388d27bd648",
+  "name" : "Law search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -325,25 +223,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Mathematics",
-        "ignoreCase" : true
-      }, {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Maths",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "law" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-mathematics/", "https://www.york.ac.uk/study/undergraduate/courses/mmath-mathematics/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-mathematics-statistics/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/llb-law/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:23:02.494+01:00",
-  "lastModified" : "2020-10-20T15:23:02.494+01:00",
-  "id" : "46fe06d0-c9f0-49c5-b2db-e76014e7f721",
-  "name" : "Music",
+  "created" : "2020-11-16T14:58:56.961443Z",
+  "lastModified" : "2020-11-16T14:58:56.966392Z",
+  "id" : "9a330a40-239f-4be5-9b73-23d04dc1b494",
+  "name" : "Linguistics search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -351,21 +244,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Music",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "linguistics" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-music/", "https://www.york.ac.uk/study/undergraduate/courses/ba-music-sound-recording/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-linguistics/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:25:07.737+01:00",
-  "lastModified" : "2020-10-20T15:25:07.737+01:00",
-  "id" : "aa2c7e3d-da07-402f-b194-656be0abd668",
-  "name" : "Natural Science",
+  "created" : "2020-11-16T15:13:04.148759Z",
+  "lastModified" : "2020-11-16T15:13:04.155573Z",
+  "id" : "1973b81b-8a15-4026-b5fa-360d4894c986",
+  "name" : "Natural Sciences Search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -373,25 +265,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Natural Science",
-        "ignoreCase" : true
-      }, {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Natural Sciences",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "natural", "sciences" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-natural-science-biology-chemistry-physics/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-natural-sciences-chemistry-maths-physics/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-archaeology-biology-environment/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-archaeology-biology-environment/", "https://www.york.ac.uk/study/undergraduate/courses/msci-archaeology-biology-environment/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-natural-science-biology-chemistry-physics/", "https://www.york.ac.uk/study/undergraduate/courses/msci-natural-science-biology-chemistry-physics/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-biophysical-science/", "https://www.york.ac.uk/study/undergraduate/courses/msci-biophysical-science/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-natural-sciences-chemistry-maths-physics/", "https://www.york.ac.uk/study/undergraduate/courses/msci-natural-sciences-chemistry-maths-physics/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-mathematical-bioscience/", "https://www.york.ac.uk/study/undergraduate/courses/msci-mathematical-bioscience/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-nanoscience/", "https://www.york.ac.uk/study/undergraduate/courses/msci-nanoscience/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-neuroscience/", "https://www.york.ac.uk/study/undergraduate/courses/msci-neuroscience/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:26:08.628+01:00",
-  "lastModified" : "2020-10-20T15:26:08.628+01:00",
-  "id" : "4fe32950-7b5e-4c4d-a9f2-25bebae4c0de",
-  "name" : "Philosophy",
+  "created" : "2020-11-16T15:15:29.876356Z",
+  "lastModified" : "2020-11-16T15:15:29.884451Z",
+  "id" : "26fdd914-95e6-4a70-b50e-8c89f3312f0a",
+  "name" : "Philosophy search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -399,21 +286,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Philosophy",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "philosophy" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "http://www.york.ac.uk/study/undergraduate/courses/ba-philosophy/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-philosophy/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:26:57.783+01:00",
-  "lastModified" : "2020-10-20T15:26:57.783+01:00",
-  "id" : "3a32e7e8-c74e-462b-9e7d-41189c681e3a",
-  "name" : "Physics",
+  "created" : "2020-11-16T15:17:43.509503Z",
+  "lastModified" : "2020-11-16T16:00:05.851867Z",
+  "id" : "81113f82-5a3d-499e-a866-e9db3c7f319b",
+  "name" : "Physics search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -421,21 +307,29 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Physics",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "physics" ]
+      } ]
+    }, {
+      "type" : "Or",
+      "triggers" : [ {
+        "type" : "NotAny",
+        "triggers" : [ {
+          "type" : "AllQueryWords",
+          "triggerWords" : [ "theoretical" ]
+        } ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-physics/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-physics-industry/", "https://www.york.ac.uk/study/undergraduate/courses/mphys-physics/", "https://www.york.ac.uk/study/undergraduate/courses/mphys-physics-industry/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-physics/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:27:45.1+01:00",
-  "lastModified" : "2020-10-20T15:27:45.1+01:00",
-  "id" : "5cfdd4d8-c6ae-48e8-8e10-a274b0ce1974",
-  "name" : "Politics",
+  "created" : "2020-11-16T15:19:00.881324Z",
+  "lastModified" : "2020-11-16T15:19:00.889711Z",
+  "id" : "5d73788a-7e4e-43da-924f-6dbc29c759d0",
+  "name" : "Politics search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -443,21 +337,20 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Politics",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "politics" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-politics/", "https://www.york.ac.uk/study/undergraduate/courses/ba-politics-placement/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-politics/" ]
   } ]
 }, {
-  "created" : "2020-10-20T15:28:33.428+01:00",
-  "lastModified" : "2020-10-20T15:28:33.428+01:00",
-  "id" : "051548c8-c256-4c3d-ac99-699d4f0a218b",
-  "name" : "Psychology",
+  "created" : "2020-11-16T15:21:18.56496Z",
+  "lastModified" : "2020-11-16T15:21:18.572238Z",
+  "id" : "de8fd828-4328-46af-ad76-93bc72c6ac04",
+  "name" : "Sociology search",
   "label" : "DEFAULT",
   "enabled" : true,
   "trigger" : {
@@ -465,36 +358,55 @@
     "triggers" : [ {
       "type" : "Or",
       "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Psychology",
-        "ignoreCase" : true
-      } ]
-    } ]
-  },
-  "actions" : [ {
-    "type" : "PromoteUrls",
-    "urlsToPromote" : [ "http://www.york.ac.uk/psychology/prospective/undergraduate/bsc-psychology/", "http://www.york.ac.uk/psychology/prospective/undergraduate/mpsych/" ]
-  } ]
-}, {
-  "created" : "2020-10-20T15:29:37.75+01:00",
-  "lastModified" : "2020-10-20T15:29:37.75+01:00",
-  "id" : "20f80eea-de62-4cd3-962a-b715c13fb13b",
-  "name" : "Sociology",
-  "label" : "DEFAULT",
-  "enabled" : true,
-  "trigger" : {
-    "type" : "And",
-    "triggers" : [ {
-      "type" : "Or",
-      "triggers" : [ {
-        "type" : "ExactQuery",
-        "triggerQuery" : "Sociology",
-        "ignoreCase" : true
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "sociology" ]
       } ]
     } ]
   },
   "actions" : [ {
     "type" : "PromoteUrls",
     "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-sociology/" ]
+  } ]
+}, {
+  "created" : "2020-11-16T15:28:00.161681Z",
+  "lastModified" : "2020-11-16T15:28:00.179768Z",
+  "id" : "fcbf6f48-dd5d-4260-b42a-4356fc908785",
+  "name" : "Social Science search",
+  "label" : "DEFAULT",
+  "enabled" : true,
+  "trigger" : {
+    "type" : "And",
+    "triggers" : [ {
+      "type" : "Or",
+      "triggers" : [ {
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "social", "science" ]
+      } ]
+    } ]
+  },
+  "actions" : [ {
+    "type" : "PromoteUrls",
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-applied-social-science/" ]
+  } ]
+}, {
+  "created" : "2020-11-16T15:30:20.950336Z",
+  "lastModified" : "2020-11-17T11:04:28.8511Z",
+  "id" : "8375dc64-6b13-4055-888d-0e417f6d0729",
+  "name" : "Theoretical Physics search",
+  "label" : "DEFAULT",
+  "enabled" : true,
+  "trigger" : {
+    "type" : "And",
+    "triggers" : [ {
+      "type" : "Or",
+      "triggers" : [ {
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "theoretical physics" ]
+      } ]
+    } ]
+  },
+  "actions" : [ {
+    "type" : "PromoteUrls",
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-theoretical-physics/" ]
   } ]
 } ]
