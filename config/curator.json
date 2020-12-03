@@ -412,4 +412,34 @@
     "type" : "PromoteUrls",
     "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-theoretical-physics/" ]
   } ]
+}, {
+  "created" : "2020-11-26T14:58:23.950734Z",
+  "lastModified" : "2020-11-26T15:00:03.692584Z",
+  "id" : "e3545428-b95f-4f20-bcdb-72d8aad380c0",
+  "name" : "Engineering search",
+  "label" : "DEFAULT",
+  "enabled" : true,
+  "trigger" : {
+    "type" : "And",
+    "triggers" : [ {
+      "type" : "Or",
+      "triggers" : [ {
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "engineering" ]
+      } ]
+    }, {
+      "type" : "Or",
+      "triggers" : [ {
+        "type" : "NotAny",
+        "triggers" : [ {
+          "type" : "AllQueryWords",
+          "triggerWords" : [ "computer", "electronic", "electrical", "genetic" ]
+        } ]
+      } ]
+    } ]
+  },
+  "actions" : [ {
+    "type" : "PromoteUrls",
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/beng-engineering/", "https://www.york.ac.uk/study/undergraduate/courses/meng-engineering/" ]
+  } ]
 } ]
