@@ -442,4 +442,25 @@
     "type" : "PromoteUrls",
     "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/beng-engineering/", "https://www.york.ac.uk/study/undergraduate/courses/meng-engineering/" ]
   } ]
+}, {
+  "created" : "2020-12-07T08:56:54.440442Z",
+  "lastModified" : "2020-12-07T08:56:54.451969Z",
+  "id" : "c5554461-8888-460f-8fd1-9268a05d7d36",
+  "name" : "Media search",
+  "label" : "DEFAULT",
+  "enabled" : true,
+  "trigger" : {
+    "type" : "And",
+    "triggers" : [ {
+      "type" : "Or",
+      "triggers" : [ {
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "media" ]
+      } ]
+    } ]
+  },
+  "actions" : [ {
+    "type" : "PromoteUrls",
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-interactive-media/", "https://www.york.ac.uk/study/undergraduate/courses/ba-theatre-writing-directing-performance/", "https://www.york.ac.uk/study/undergraduate/courses/ba-business-creative-industries/", "https://www.york.ac.uk/study/undergraduate/courses/ba-business-creative-industries/" ]
+  } ]
 } ]
