@@ -73,6 +73,7 @@ coursesJson.courses.eachWithIndex { course, i ->
     metadata.put("courseYearOfEntry", course.courseYearOfEntry)
     metadata.put("courseName", course.courseName)
     metadata.put("courseContent", course.courseContent)
+    metadata.put("contentType", course.contentType)
 
     store.add(record, metadata)
 }
