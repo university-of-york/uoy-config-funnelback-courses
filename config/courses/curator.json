@@ -463,4 +463,25 @@
     "type" : "PromoteUrls",
     "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-interactive-media/", "https://www.york.ac.uk/study/undergraduate/courses/ba-theatre-writing-directing-performance/", "https://www.york.ac.uk/study/undergraduate/courses/ba-business-creative-industries/", "https://www.york.ac.uk/study/undergraduate/courses/ba-business-creative-industries/" ]
   } ]
+}, {
+  "created" : "2021-03-18T13:31:29.60701Z",
+  "lastModified" : "2021-03-18T13:31:29.615089Z",
+  "id" : "1842cc9f-6e7c-4072-84ed-371a488d2b07",
+  "name" : "Medicine search",
+  "label" : "DEFAULT",
+  "enabled" : true,
+  "trigger" : {
+    "type" : "And",
+    "triggers" : [ {
+      "type" : "Or",
+      "triggers" : [ {
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "medicine" ]
+      } ]
+    } ]
+  },
+  "actions" : [ {
+    "type" : "PromoteUrls",
+    "urlsToPromote" : [ "https://www.hyms.ac.uk/medicine/mbbs-medicine" ]
+  } ]
 } ]
