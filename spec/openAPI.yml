@@ -42,6 +42,7 @@ paths:
             example: york-uni-courses
             enum:
               - york-uni-courses
+              - courses
         - name: profile
           in: query
           description: The Funnelback profile to use. `_default` is always present, `_default_preview` is used for previewing results.

@@ -10,7 +10,7 @@ This configures a collection of course information within Funnelback, which can 
 
 ## Consuming the API
 
-The Funnelback Courses API is available at [https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&smeta_contentType=course&query=History](https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&smeta_contentType=course&query=History) (update the `query` parameter with your search term).
+The Funnelback Courses API is available at [https://york.funnelback.co.uk/search?collection=courses&profile=_default&form=course-search&smeta_contentType=course&query=History](https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&smeta_contentType=course&query=History) (update the `query` parameter with your search term).
 
 Currently this defaults to bringing back 10 results.
 * To retrieve 25 entries in the results array, add `&num_ranks=25` to the URL.
@@ -24,6 +24,12 @@ The [latest version of the API specification](https://university-of-york.github.
 
 A Funnelback collection is a set of data that can be searched. It is possible for collections to contain other collections, as the `york-uni-campusmap` collection contains others.
 
+There are three collections for courses.
+- `york-uni-courses` is powered by a web crawler that indexes all York courses.
+- `external-courses` is a [custom collection](https://docs.squiz.net/funnelback/archive/collections/collection-types/custom.html) 
+  that contains
+- `courses` is a [meta collection](https://docs.squiz.net/funnelback/archive/collections/collection-types/meta/index.html) that combines both of the other collections.
+
 The course collection is called `york-uni-courses`.
 
 ### Search Templates
@@ -33,7 +39,7 @@ Search templates are `*.ftl` files that determine the format of results from Fun
 The __course-search template__ outputs just the course fields the Courses API requires as a Funnelback response in JSON format, 
 with callback if 'callback' parameter is included in query string. 
 
-In the version of Funnelback currently in use (15.10), it requires the following line in the collections.cfg file so it 
+In the version of Funnelback currently in use (15.24), it requires the following line in the collections.cfg file so it 
 will return the results with a content type of application/json:
 
     ui.modern.form.course-search.content_type=application/json
@@ -79,9 +85,16 @@ You will need to copy the code from the matching file in Source Control to overw
 
 Test that the file is working by running an example search, then when you are satisfied return to the config list and click **Publish** to publish that file to Live.
 
+Due to Funnelback updates it is no longer possible to upload `collection.cfg` in this way. Because it must now be edited in the UI 
+it is recommended that changes are made in the UI first, and then copied into this repo. To do this select 
+'Edit Collection Configuration' under the 'Administer' tab. From there you can select 'Edit raw text' (pictured below) to
+get the file contents.
+
+![Screenshot from 2021-03-18 09-19-53](https://user-images.githubusercontent.com/68321515/111607218-f4349980-87cf-11eb-989b-89003d866c69.png)
+
 ## Documentation
 
-The [customised Swagger-UI](https://university-of-york.github.io/uoy-config-funnelback-courses/) has been set up by following [these instructions](https://wiki.york.ac.uk/display/ittechdocs/Hosting+API+Documentation+with+Swagger+UI).
+The [customised Swagger-UI](https://university-of-york.github.io/uoy-config-funnelback-courses/) has been set up by following [these instructions](https://wiki.york.ac.uk/display/ittechdocs/Hosting+API+Documentation+with+Swagger+UI). For development documentation and ADR history, there is more information available at the [Course Search wiki](https://github.com/university-of-york/uoy-app-course-search/wiki).
 
 ## Contact
 
