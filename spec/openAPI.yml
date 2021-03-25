@@ -35,13 +35,13 @@ paths:
             example: History
         - name: collection
           in: query
-          description: Which Funnelback collection to search. `york-uni-courses` contains course results.
+          description: Which Funnelback collection to search. `courses` contains course results.
           required: true
           schema:
             type: string
-            example: york-uni-courses
+            example: courses
             enum:
-              - york-uni-courses
+              - courses
         - name: profile
           in: query
           description: The Funnelback profile to use. `_default` is always present, `_default_preview` is used for previewing results.
