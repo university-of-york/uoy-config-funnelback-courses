@@ -27,10 +27,10 @@ A Funnelback collection is a set of data that can be searched. It is possible fo
 There are three collections for courses.
 - `york-uni-courses` is powered by a web crawler that indexes all York courses.
 - `external-courses` is a [custom collection](https://docs.squiz.net/funnelback/archive/collections/collection-types/custom.html) 
-  that contains
+  that contains details on HYMS courses published by the CMS.
 - `courses` is a [meta collection](https://docs.squiz.net/funnelback/archive/collections/collection-types/meta/index.html) that combines both of the other collections.
 
-The course collection is called `york-uni-courses`.
+The course collection we use for the courses API is `courses`.
 
 ### Search Templates
 

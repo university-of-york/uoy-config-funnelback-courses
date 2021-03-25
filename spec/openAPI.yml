@@ -39,9 +39,8 @@ paths:
           required: true
           schema:
             type: string
-            example: york-uni-courses
+            example: courses
             enum:
-              - york-uni-courses
               - courses
         - name: profile
           in: query
