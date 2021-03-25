@@ -35,7 +35,7 @@ paths:
             example: History
         - name: collection
           in: query
-          description: Which Funnelback collection to search. `york-uni-courses` contains course results.
+          description: Which Funnelback collection to search. `courses` contains course results.
           required: true
           schema:
             type: string

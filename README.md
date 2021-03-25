@@ -10,7 +10,7 @@ This configures a collection of course information within Funnelback, which can 
 
 ## Consuming the API
 
-The Funnelback Courses API is available at [https://york.funnelback.co.uk/search?collection=courses&profile=_default&form=course-search&smeta_contentType=course&query=History](https://york.funnelback.co.uk/search?collection=york-uni-courses&profile=_default&form=course-search&smeta_contentType=course&query=History) (update the `query` parameter with your search term).
+The Funnelback Courses API is available at [https://york.funnelback.co.uk/search?collection=courses&profile=_default&form=course-search&smeta_contentType=course&query=History](https://york.funnelback.co.uk/search?collection=courses&profile=_default&form=course-search&smeta_contentType=course&query=History) (update the `query` parameter with your search term).
 
 Currently this defaults to bringing back 10 results.
 * To retrieve 25 entries in the results array, add `&num_ranks=25` to the URL.
@@ -58,14 +58,14 @@ You will need a Funnelback (v15.10+) account with the necessary permissions to m
 
 ### Testing
 
-The `york-uni-courses` collection has two profiles, for 'Live' and 'Preview'. The preview profile can be used for testing 
+Funnelback collections have two profiles, for 'Live' and 'Preview'. The preview profile can be used for testing 
 purposes. For details on how to deploy files to the preview profile, see 'Deployment'.
 
 ### Deployment
 
 Deployment of configuration files to Funnelback cannot be done programmatically, and must be done using the [web interface](https://york.funnelback.co.uk/search/admin).
 
-While logged in to the Funnelback admin console, find the *york-uni-courses* collection and select 'Browse Collection Configuration Files'.
+While logged in to the Funnelback admin console, find the collection you wish to make a change to and select 'Browse Collection Configuration Files'.
 From here you will see a list of configuration files for each profile. In order to publish a configuration file to Live, 
 it must first be pushed to 'Preview'.
 
