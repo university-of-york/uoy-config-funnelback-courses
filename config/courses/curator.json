@@ -63,7 +63,7 @@
   } ]
 }, {
   "created" : "2020-11-16T14:37:27.065386Z",
-  "lastModified" : "2020-11-24T12:32:57.978641Z",
+  "lastModified" : "2021-05-19T18:10:40.796505+01:00",
   "id" : "bfc00ccc-b45c-4707-b7da-99f3f21642e6",
   "name" : "Computer Engineering search",
   "label" : "DEFAULT",
@@ -80,7 +80,7 @@
   },
   "actions" : [ {
     "type" : "PromoteUrls",
-    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/beng-electronic-computer-engineering/" ]
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/beng-electronic-computer-engineering/", "https://www.york.ac.uk/study/undergraduate/courses/meng-electronic-computer-engineering/", "https://www.york.ac.uk/study/undergraduate/courses/beng-electronic-computer-engineering-industry/", "https://www.york.ac.uk/study/undergraduate/courses/meng-electronic-computer-engineering-industry/" ]
   }, {
     "type" : "RemoveUrls",
     "urlsToRemove" : [ "https://www.york.ac.uk/study/undergraduate/courses/bsc-genetics/", "https://www.york.ac.uk/study/undergraduate/courses/mbiol-genetics/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-molecular-cell-biology/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-biochemistry/", "https://www.york.ac.uk/study/undergraduate/courses/mbiochem-biochemistry/", "https://www.york.ac.uk/study/undergraduate/courses/bsc-mathematics/" ]
@@ -414,7 +414,7 @@
   } ]
 }, {
   "created" : "2020-11-26T14:58:23.950734Z",
-  "lastModified" : "2020-11-26T15:00:03.692584Z",
+  "lastModified" : "2021-05-19T18:11:32.00036+01:00",
   "id" : "e3545428-b95f-4f20-bcdb-72d8aad380c0",
   "name" : "Engineering search",
   "label" : "DEFAULT",
@@ -483,5 +483,26 @@
   "actions" : [ {
     "type" : "PromoteUrls",
     "urlsToPromote" : [ "https://www.hyms.ac.uk/medicine/mbbs-medicine" ]
+  } ]
+}, {
+  "created" : "2021-05-19T17:28:57.415419+01:00",
+  "lastModified" : "2021-05-19T17:31:21.405394+01:00",
+  "id" : "d8cfd4b6-09ad-40b1-84aa-023556d9da71",
+  "name" : "French search",
+  "label" : "DEFAULT",
+  "enabled" : true,
+  "trigger" : {
+    "type" : "And",
+    "triggers" : [ {
+      "type" : "Or",
+      "triggers" : [ {
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "French" ]
+      } ]
+    } ]
+  },
+  "actions" : [ {
+    "type" : "PromoteUrls",
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-french-linguistics-year-abroad/", "https://www.york.ac.uk/study/undergraduate/courses/ba-french-german-year-abroad/", "https://www.york.ac.uk/study/undergraduate/courses/ba-french-italian-year-abroad/", "https://www.york.ac.uk/study/undergraduate/courses/ba-french-spanish-year-abroad/", "https://www.york.ac.uk/study/undergraduate/courses/ba-french-philosophy/" ]
   } ]
 } ]
