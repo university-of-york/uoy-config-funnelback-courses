@@ -505,4 +505,25 @@
     "type" : "PromoteUrls",
     "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-french-linguistics-year-abroad/", "https://www.york.ac.uk/study/undergraduate/courses/ba-french-german-year-abroad/", "https://www.york.ac.uk/study/undergraduate/courses/ba-french-italian-year-abroad/", "https://www.york.ac.uk/study/undergraduate/courses/ba-french-spanish-year-abroad/", "https://www.york.ac.uk/study/undergraduate/courses/ba-french-philosophy/" ]
   } ]
+}, {
+  "created" : "2021-10-05T10:50:05.050157+01:00",
+  "lastModified" : "2021-10-05T10:50:05.055477+01:00",
+  "id" : "a0bbbde9-4a46-4c1e-9aed-639f208d7b82",
+  "name" : "Theatre search",
+  "label" : "DEFAULT",
+  "enabled" : true,
+  "trigger" : {
+    "type" : "And",
+    "triggers" : [ {
+      "type" : "Or",
+      "triggers" : [ {
+        "type" : "AllQueryWords",
+        "triggerWords" : [ "theatre" ]
+      } ]
+    } ]
+  },
+  "actions" : [ {
+    "type" : "PromoteUrls",
+    "urlsToPromote" : [ "https://www.york.ac.uk/study/undergraduate/courses/ba-theatre-writing-directing-performance/" ]
+  } ]
 } ]
