@@ -1,3 +1,6 @@
+> **Note**
+> This application was retired on 10/05/2023.
+
 # Funnelback Courses API
 
 This repo contains configuration for the University of York's Course Search powered by [Funnelback](https://www.funnelback.com/). 
